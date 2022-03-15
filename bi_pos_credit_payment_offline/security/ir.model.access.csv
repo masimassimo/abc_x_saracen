@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+bi_pos_credit_payment_offline_sale_manager_user,bi_pos_credit_payment_offline_sale_manager_username,bi_pos_credit_payment_offline.model_partner_credit,point_of_sale.group_pos_manager,1,1,1,1
+bi_pos_credit_payment_offline_employee_user,bi_pos_credit_payment_offline_employee_username,bi_pos_credit_payment_offline.model_partner_credit,base.group_user,1,1,1,0
+access_credit_history_manager,credit.history.manager,model_credit_history,,1,1,1,1
+access_update_credit_history_manager,update.credit.history.manager,model_update_credit_history,,1,1,1,1
+access_update_credit_history_payment_manager,update.credit.history.payment.manager,model_update_credit_history_payment,,1,1,1,1
+access_credit_account,access_credit_account,model_credit_account,,1,1,1,1
+

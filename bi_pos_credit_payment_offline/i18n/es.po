@@ -1,0 +1,389 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bi_pos_credit_payment_offline
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-08 12:43+0000\n"
+"PO-Revision-Date: 2021-12-08 12:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bi_pos_credit_payment_offline
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.invoice_credit_payment
+msgid "<span>Allow credit in invoice</span>"
+msgstr "<span>Permitir crédito en la factura</span>"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history__balance
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__balance
+msgid "Balance"
+msgstr "Equilibrio"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__balance_credit_amount
+msgid "Balance Credit Amount"
+msgstr "Monto del saldo del crédito"
+
+#. module: bi_pos_credit_payment_offline
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.view_credit_account
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_account__create_uid
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__create_uid
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_partner_credit__create_uid
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history__create_uid
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_account__create_date
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__create_date
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_partner_credit__create_date
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history__create_date
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/xml/pos_extended.xml:0
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_partner_credit__credit_jr
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_pos_order__credit_check
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_res_partner__custom_credit
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_res_users__custom_credit
+#: model:ir.ui.menu,name:bi_pos_credit_payment_offline.menu_sale_credit
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.credit_detail_button_res_partner
+#, python-format
+msgid "Credit"
+msgstr "Crédito"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model,name:bi_pos_credit_payment_offline.model_credit_account
+msgid "Credit Account"
+msgstr "Cuenta de crédito"
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/xml/pos_extended.xml:0
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_account__credit_amount
+#, python-format
+msgid "Credit Amount"
+msgstr "Monto de crédito"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.actions.act_window,name:bi_pos_credit_payment_offline.action_pos_credit
+#: model:ir.ui.menu,name:bi_pos_credit_payment_offline.menu_sale_order_invoice
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.view_credit_tree
+msgid "Credit Details"
+msgstr "Detalles de crédito"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model,name:bi_pos_credit_payment_offline.model_credit_history
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_res_partner__credit_ids
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_res_users__credit_ids
+msgid "Credit History"
+msgstr "Historial de crédito"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.actions.act_window,name:bi_pos_credit_payment_offline.action_view_credit_account
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.invoice_credit_payment
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.view_credit_account
+msgid "Credit Payment"
+msgstr "Pago de crédito"
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_account__credit_id
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__partner_id
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_partner_credit__partner_id
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history__partner_id
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__partner_id
+#, python-format
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: bi_pos_credit_payment_offline
+#: code:addons/bi_pos_credit_payment_offline/models/pos.py:0
+#, python-format
+msgid "Customer Invoice"
+msgstr "Factura del cliente"
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#, python-format
+msgid "Customer has not Sufficient Credit To Pay"
+msgstr "La cliente no tiene crédito suficiente para pagar"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__date
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history__date_update
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__date_update
+msgid "Date"
+msgstr "Fecha"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_account__display_name
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__display_name
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_partner_credit__display_name
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history__display_name
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#, python-format
+msgid "Empty Order"
+msgstr "Pedido vacío"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields.selection,name:bi_pos_credit_payment_offline.selection__pos_config__invoice_credit_payment__full_amount
+msgid "Full Amount(without credit)"
+msgstr "Monto completo (sin crédito)"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_account__id
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__id
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_partner_credit__id
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history__id
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__id
+msgid "ID"
+msgstr "IDENTIFICACIÓN"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_pos_config__invoice_credit_payment
+msgid "Invoice Credit Payment"
+msgstr "Pago de crédito de factura"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model,name:bi_pos_credit_payment_offline.model_account_journal
+msgid "Journal"
+msgstr "diario"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_account____last_update
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history____last_update
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_partner_credit____last_update
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history____last_update
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_account__write_uid
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__write_uid
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_partner_credit__write_uid
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history__write_uid
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por última vez por"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_account__write_date
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__write_date
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_partner_credit__write_date
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history__write_date
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#, python-format
+msgid "Not Sufficient Credit"
+msgstr "Crédito insuficiente"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history__old_credit_bal
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__old_credit_bal
+msgid "Old Credit Balance"
+msgstr "Saldo de crédito antiguo"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_account_bank_statement_import_journal_creation__credit_jr
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_account_journal__credit_jr
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_pos_payment_method__credit_jr
+msgid "POS Credit Journal"
+msgstr "Diario de crédito POS"
+
+#. module: bi_pos_credit_payment_offline
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.credit_detail_button_res_partner
+msgid "POS Customer Credit Details"
+msgstr "Detalles de crédito del cliente de POS"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__pos_order_id
+msgid "POS Order"
+msgstr "Orden POS"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__pos_order_amount
+msgid "POS Order Amount"
+msgstr "Monto del pedido de POS"
+
+#. module: bi_pos_credit_payment_offline
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.credit_detail_button_res_partner
+msgid "POS Orders Credit Payment History"
+msgstr "Órdenes POS Crédito Historial de pagos"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields.selection,name:bi_pos_credit_payment_offline.selection__pos_config__invoice_credit_payment__partial_amount
+msgid "Partial Amount(with credit)"
+msgstr "Monto parcial (con crédito)"
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#, python-format
+msgid "Payment Amount Exceeded"
+msgstr "Monto de pago excedido"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_account__journal_id
+msgid "Payment Journal"
+msgstr "Diario de pago"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__payment_refer
+msgid "Payment Ref."
+msgstr "Pago Ref."
+
+#. module: bi_pos_credit_payment_offline
+#: code:addons/bi_pos_credit_payment_offline/models/pos.py:0
+#, python-format
+msgid "Please provide a partner for the sale."
+msgstr "Proporcione un socio para la venta."
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model,name:bi_pos_credit_payment_offline.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuración de punto de venta"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model,name:bi_pos_credit_payment_offline.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Órdenes de punto de venta"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model,name:bi_pos_credit_payment_offline.model_pos_payment_method
+msgid "Point of Sale Payment Methods"
+msgstr "Métodos de pago en el punto de venta"
+
+#. module: bi_pos_credit_payment_offline
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.view_credit_account
+msgid "Submit"
+msgstr "Enviar"
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#, python-format
+msgid ""
+"There must be at least one product in your order before it can be validated."
+msgstr ""
+"Debe haber al menos un producto en su pedido antes de que pueda ser validado."
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#, python-format
+msgid "Unknown customer"
+msgstr "Cliente desconocida"
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#, python-format
+msgid "Unknown customer/use credit payment"
+msgstr "Cliente desconocido / pago de crédito de uso"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_partner_credit__update
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.view_credit_tree
+msgid "Update"
+msgstr "Actualizar"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model,name:bi_pos_credit_payment_offline.model_update_credit_history
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_res_partner__update_credit_ids
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_res_users__update_credit_ids
+msgid "Update Credit History"
+msgstr "Actualizar historial crediticio"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model,name:bi_pos_credit_payment_offline.model_update_credit_history_payment
+msgid "Update Credit History Payment"
+msgstr "Actualizar el pago del historial de crédito"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_res_partner__update_credit_payment_ids
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_res_users__update_credit_payment_ids
+msgid "Update Credit History with Accounting Entry"
+msgstr "Actualizar el historial crediticio con entrada contable"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history__update_credit_amount
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_update_credit_history_payment__update_credit_amount
+msgid "Update Credit amount"
+msgstr "Actualizar monto de crédito"
+
+#. module: bi_pos_credit_payment_offline
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.credit_detail_button_res_partner
+msgid "Update Customer Credit History"
+msgstr "Actualizar el historial crediticio del cliente"
+
+#. module: bi_pos_credit_payment_offline
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.credit_detail_button_res_partner
+msgid "Update Customer Credit with Payment History"
+msgstr "Actualizar el crédito del cliente con el historial de pagos"
+
+#. module: bi_pos_credit_payment_offline
+#: model_terms:ir.ui.view,arch_db:bi_pos_credit_payment_offline.view_credit_tree
+msgid "Update With Accounting Entry"
+msgstr "Actualizar con entrada contable"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model.fields,field_description:bi_pos_credit_payment_offline.field_credit_history__used_credit_amount
+msgid "Used Credit Amount"
+msgstr "Monto de crédito usado"
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#, python-format
+msgid "You cannot Pay More than Total Amount"
+msgstr "No puede pagar más que la cantidad total"
+
+#. module: bi_pos_credit_payment_offline
+#. openerp-web
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#: code:addons/bi_pos_credit_payment_offline/static/src/js/pos_extended.js:0
+#, python-format
+msgid "You cannot use Credit payment. Select customer first."
+msgstr "No puede utilizar el pago con crédito. Seleccione al cliente primero."
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model,name:bi_pos_credit_payment_offline.model_res_partner
+msgid "partner"
+msgstr "pareja"
+
+#. module: bi_pos_credit_payment_offline
+#: model:ir.model,name:bi_pos_credit_payment_offline.model_partner_credit
+msgid "partner Credit"
+msgstr "crédito de socio"
