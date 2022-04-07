@@ -1,0 +1,77 @@
+<odoo>
+  <data>
+      <record model="ir.ui.view" id="stock_move_line_inherit">
+      <field name="name">stock_move_line_inherit</field>
+      <field name="model">stock.move.line</field>
+      <field name="inherit_id" ref="stock_barcode.stock_move_line_product_selector"/>
+      <field name="arch" type="xml">
+        <xpath expr="//form/div[@groups='stock.group_production_lot']" position="after">
+            <div class="row" groups="stock.group_production_lot">
+                <div class="col-12 col-md-6 my-2 d-flex align-items-baseline">
+                    <i class="fa fa-fw fa-lg fa-calendar mr-3" title="Expiration Date" attrs="{'invisible': [('tracking', '=', 'none')]}"/>
+                    <field name="expiration_date_upd" placeholder="Expiration Date"
+                        attrs="{'invisible': ['|', '|', ('tracking', '=', 'none'), ('picking_type_use_create_lots', '=', False), ('picking_type_use_existing_lots', '=', True)]}"
+                        />
+                </div>
+            </div>
+        </xpath>
+      </field>
+      </record>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="abc_barcode_scadenza.list">
+      <field name="name">abc_barcode_scadenza list</field>
+      <field name="model">abc_barcode_scadenza.abc_barcode_scadenza</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="abc_barcode_scadenza.action_window">
+      <field name="name">abc_barcode_scadenza window</field>
+      <field name="res_model">abc_barcode_scadenza.abc_barcode_scadenza</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="abc_barcode_scadenza.action_server">
+      <field name="name">abc_barcode_scadenza server</field>
+      <field name="model_id" ref="model_abc_barcode_scadenza_abc_barcode_scadenza"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="abc_barcode_scadenza" id="abc_barcode_scadenza.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="abc_barcode_scadenza.menu_1" parent="abc_barcode_scadenza.menu_root"/>
+    <menuitem name="Menu 2" id="abc_barcode_scadenza.menu_2" parent="abc_barcode_scadenza.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="abc_barcode_scadenza.menu_1_list" parent="abc_barcode_scadenza.menu_1"
+              action="abc_barcode_scadenza.action_window"/>
+    <menuitem name="Server to list" id="abc_barcode_scadenza" parent="abc_barcode_scadenza.menu_2"
+              action="abc_barcode_scadenza.action_server"/>
+-->
+  </data>
+</odoo>
