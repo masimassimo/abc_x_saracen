@@ -1,0 +1,75 @@
+<odoo>
+  <data>
+      <record model="ir.ui.view" id="stock_move_line_inherit">
+      <field name="name">stock_move_line_inherit</field>
+      <field name="model">stock.move.line</field>
+      <field name="inherit_id" ref="stock_barcode.stock_move_line_product_selector"/>
+      <field name="arch" type="xml">
+        <xpath expr="//form/div[2]" position="after">
+            <div class="row">
+                <div class="col-6 my-2 d-flex align-items-baseline">
+                    <i class="fa fa-fw fa-lg fa-truck mr-3" title="Q.tà movimento origine"/>
+                    <field name="move_qty_origin" options="{'type': 'number'}" readonly="1" placeholder="Q.tà movimento origine" title="Q.tà movimento origine"/>
+                </div>
+            </div>
+        </xpath>
+      </field>
+      </record>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="abc_barcode_qty_origine.list">
+      <field name="name">abc_barcode_qty_origine list</field>
+      <field name="model">abc_barcode_qty_origine.abc_barcode_qty_origine</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="abc_barcode_qty_origine.action_window">
+      <field name="name">abc_barcode_qty_origine window</field>
+      <field name="res_model">abc_barcode_qty_origine.abc_barcode_qty_origine</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="abc_barcode_qty_origine.action_server">
+      <field name="name">abc_barcode_qty_origine server</field>
+      <field name="model_id" ref="model_abc_barcode_qty_origine_abc_barcode_qty_origine"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="abc_barcode_qty_origine" id="abc_barcode_qty_origine.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="abc_barcode_qty_origine.menu_1" parent="abc_barcode_qty_origine.menu_root"/>
+    <menuitem name="Menu 2" id="abc_barcode_qty_origine.menu_2" parent="abc_barcode_qty_origine.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="abc_barcode_qty_origine.menu_1_list" parent="abc_barcode_qty_origine.menu_1"
+              action="abc_barcode_qty_origine.action_window"/>
+    <menuitem name="Server to list" id="abc_barcode_qty_origine" parent="abc_barcode_qty_origine.menu_2"
+              action="abc_barcode_qty_origine.action_server"/>
+-->
+  </data>
+</odoo>

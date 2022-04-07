@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_abc_barcode_qty_origine_abc_barcode_qty_origine,abc_barcode_qty_origine.abc_barcode_qty_origine,model_abc_barcode_qty_origine_abc_barcode_qty_origine,base.group_user,1,1,1,1

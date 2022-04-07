@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <templates id="template" xml:space="preserve">
+        <!--t t-inherit="stock_barcode_lines_template" t-inherit-mode="extension">
+            <xpath expr="//div[@name='quantity']" position="after"-->
+        <t t-name="stock_barcode_lines_template" t-extend="stock_barcode_lines_template">
+            <t t-jquery="div[name='quantity']" t-operation="after">
+                <t t-if="line.move_qty_origin">
+                    <div name="quantity_origin"> <!-- Name used for inheritance -->
+                        <i class="fa fa-fw fa-truck"/>
+                        <span t-if="line.move_qty_origin" t-esc="line.move_qty_origin"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+        <!--t t-name="stock_barcode_lines_template" t-extend="stock_barcode_lines_template">
+            <t t-jquery=".product-label" t-operation="after">
+                <i class="fa fa-fw fa-cube"/>
+                <t t-log="model"/>
+                <t t-log="line"/>
+                <span t-if="line.move_qty_origin" t-esc="line.move_qty_origin"/>                
+            </t>
+        </t-->
+    </templates>
