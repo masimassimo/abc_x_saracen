@@ -1,0 +1,92 @@
+<odoo>
+  <data>
+      <record id="stock_delivery_note_tree_view_n_fornitore_inherit" model="ir.ui.view">
+          <field name="name">stock.delivery.note.tree_n_fornitore_inherit</field>
+          <field name="model">stock.delivery.note</field>
+          <field name="inherit_id" ref="l10n_it_delivery_note.stock_delivery_note_tree_view"/>
+          <field name="arch" type="xml">
+                <xpath expr="//field[@name='date']" position="after">
+                    <field name="n_ddt_fornitore"/>
+                </xpath>
+          </field>
+      </record>
+      
+      <record id="stock_delivery_note_form_view_n_fornitore_inherit" model="ir.ui.view">
+          <field name="name">stock.delivery.note.form_n_fornitore_inherit</field>
+          <field name="model">stock.delivery.note</field>
+          <field name="inherit_id" ref="l10n_it_delivery_note.stock_delivery_note_form_view"/>
+          <field name="arch" type="xml">
+                <xpath expr="//field[@name='date']" position="after">
+                    <field name="n_ddt_fornitore"/>
+                </xpath>
+          </field>
+      </record>
+      
+      <record id="stock_picking_form_view_ddt" model="ir.ui.view">
+        <field name="name">stock.picking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="l10n_it_delivery_note.stock_picking_form_view" />
+        <field name="arch" type="xml">
+                <xpath expr="//field[@name='delivery_note_date']" position="after">
+                    <field name="n_ddt_fornitore"/>
+                </xpath>
+            </field>
+      </record>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="abc_ddt_expiration.list">
+      <field name="name">abc_ddt_expiration list</field>
+      <field name="model">abc_ddt_expiration.abc_ddt_expiration</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="abc_ddt_expiration.action_window">
+      <field name="name">abc_ddt_expiration window</field>
+      <field name="res_model">abc_ddt_expiration.abc_ddt_expiration</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="abc_ddt_expiration.action_server">
+      <field name="name">abc_ddt_expiration server</field>
+      <field name="model_id" ref="model_abc_ddt_expiration_abc_ddt_expiration"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="abc_ddt_expiration" id="abc_ddt_expiration.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="abc_ddt_expiration.menu_1" parent="abc_ddt_expiration.menu_root"/>
+    <menuitem name="Menu 2" id="abc_ddt_expiration.menu_2" parent="abc_ddt_expiration.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="abc_ddt_expiration.menu_1_list" parent="abc_ddt_expiration.menu_1"
+              action="abc_ddt_expiration.action_window"/>
+    <menuitem name="Server to list" id="abc_ddt_expiration" parent="abc_ddt_expiration.menu_2"
+              action="abc_ddt_expiration.action_server"/>
+-->
+  </data>
+</odoo>
