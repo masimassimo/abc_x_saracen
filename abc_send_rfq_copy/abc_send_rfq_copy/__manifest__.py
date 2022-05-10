@@ -1,23 +1,22 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "abc_send_rfq_copy",
+    'name': "Invia copia RFQ",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Questo modulo invia una copia della RFQ ad un indirizzo email prestabilito""",
 
     'description': """
-        Long description of module's purpose
+        Questo modulo invia una copia della RFQ ad un indirizzo email prestabilito
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Massimo Masi",
+    'website': "https://www.abcstrategie.it",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Uncategorized',
-    'version': '0.1',
+    'version': '0.2',
 
     # any module necessary for this one to work correctly
     'depends': ['base','purchase','mail'],
@@ -33,6 +32,6 @@
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        #'demo/demo.xml',
     ],
 }

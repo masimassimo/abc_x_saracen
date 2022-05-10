@@ -43,6 +43,11 @@ msgstr "<strong>Data Ordine:</strong>"
 
 #. module: abc_report_purc_ord_no_prices
 #: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "<strong>Date Planned:</strong>"
+msgstr "<strong>Data di consegna:</strong>"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
 msgid "<strong>Purchase Representative:</strong>"
 msgstr "<strong>Referente acquisti:</strong>"
 
