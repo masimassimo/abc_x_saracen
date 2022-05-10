@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data> 
+        <template id="report_purchasequotation_document_ext"  inherit_id="purchase.report_purchasequotation_document">
+            <xpath expr="//th[@name='th_expected_date']" position="replace">
+                <th name="th_default_code" class="text-center"><strong>Default Code</strong></th>
+            </xpath>
+            <xpath expr="////tbody/t/tr/t/td[2]" position="replace">
+                <td class="text-center">
+                    <span t-field="order_line.product_id.default_code"/>
+                </td>   
+            </xpath>
+            
+            <xpath expr="//div[@class='page']/h2" position="after">
+                <div id="informations" class="row mt32 mb32">
+                    <div t-if="o.date_planned" class="col-3 bm-2">
+                        <strong>Order Date:</strong>
+                        <p t-field="o.date_planned" t-options='{"widget": "date"}' class="m-0"/>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

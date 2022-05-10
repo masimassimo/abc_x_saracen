@@ -1,0 +1,92 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* abc_report_purc_ord_no_prices
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-04 13:49+0000\n"
+"PO-Revision-Date: 2022-05-04 13:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: abc_report_purc_ord_no_prices
+#: model:ir.actions.report,print_report_name:abc_report_purc_ord_no_prices.action_report_purchase_order_wo_prices
+msgid ""
+"\n"
+"                (object.state in ('draft', 'sent') and 'Request for Quotation - %s' % (object.name) or\n"
+"                'Purchase Order - %s' % (object.name))"
+msgstr ""
+"\n"
+"                (object.state in ('draft', 'sent') and 'Richiesta di Preventivo - %s' % (object.name) or\n"
+"                'Ordine di Acquisto - %s' % (object.name))"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "<strong>Date Req.</strong>"
+msgstr "<strong>Data richiesta</strong>"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "<strong>Description</strong>"
+msgstr "<strong>Descrizione:</strong>"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "<strong>Order Date:</strong>"
+msgstr "<strong>Data Ordine:</strong>"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "<strong>Purchase Representative:</strong>"
+msgstr "<strong>Referente acquisti:</strong>"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "<strong>Qty</strong>"
+msgstr "<strong>Q.tà</strong>"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "<strong>Shipping address:</strong>"
+msgstr "<strong>Indirizzo di spedizione:</strong>"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "<strong>Your Order Reference:</strong>"
+msgstr "<strong>Riferimento Ordine:</strong>"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "Cancelled Purchase Order #"
+msgstr "Ordine di acquisto annullato #"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "Purchase Order #"
+msgstr "Ordine di acquisto #"
+
+#. module: abc_report_purc_ord_no_prices
+#: model:ir.actions.report,name:abc_report_purc_ord_no_prices.action_report_purchase_order_wo_prices
+msgid "Purchase Order Without Prices"
+msgstr "Ordine di acquisto senza prezzi"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "Request for Quotation #"
+msgstr "Richiesta di Preventivo #"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "<strong>Default Code</strong>"
+msgstr "<strong>Codice interno</strong>"
+
+#. module: abc_report_purc_ord_no_prices
+#: model_terms:ir.ui.view,arch_db:abc_report_purc_ord_no_prices.report_purchaseorder_wo_prices_document
+msgid "Order Date:"
+msgstr "Data Ricezione:"
