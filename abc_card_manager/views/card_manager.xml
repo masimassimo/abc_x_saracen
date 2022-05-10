@@ -1,0 +1,71 @@
+<odoo>
+  <data>
+      
+    <!-- FORM VIEW -->
+      
+    <record model="ir.ui.view" id="form_card_manager">
+      <field name="name">Form Card Manager</field>
+      <field name="model">res.partner.card_manager</field>
+      <field name="arch" type="xml">
+        <form string="Card Manager">
+            <sheet>
+              <group>
+                  <field name="currency_id" invisible="1"/>
+                  <field name="name"/>
+                  <field name="date_expiration"/>
+                  <field name="client_id"/>
+                  <field name="saldo" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+              </group>
+            </sheet>
+        </form>
+      </field>
+    </record>  
+      
+    <!-- TREE VIEW -->
+
+    <record model="ir.ui.view" id="list_card_manager">
+      <field name="name">Tree Card Manager</field>
+      <field name="model">res.partner.card_manager</field>
+      <field name="arch" type="xml">
+        <tree string="Tree Card Manager">
+              <field name="currency_id" invisible="1"/>
+              <field name="name"/>
+              <field name="state" widget="boolean_toggle"/>
+              <field name="date_activation"/>
+              <field name="date_expiration"/>
+              <field name="client_id"/>
+              <field name="saldo" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+              <field name="price_list"/>
+        </tree>
+      </field>
+    </record>
+    
+    
+    <!-- SEARCH VIEW -->
+      
+    <record model="ir.ui.view" id="search_card_manager">
+        <field name="name">Search Card Manager</field>
+        <field name="model">res.partner.card_manager</field>
+        <field name="arch" type="xml">
+            <search string="Search Card Manager">
+                <field name="name"/>
+                <field name="client_id"/>
+            </search>
+        </field>
+    </record>
+      
+
+
+    <!-- MENU MODULO -->
+    
+    <record model="ir.actions.act_window" id="action_card_manager">
+      <field name="name">Card Manager</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">res.partner.card_manager</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+      
+    <menuitem id="res_partner_card_manager_menu" name="Menu Card Manager" parent="contacts.menu_contacts" action="action_card_manager"/>
+
+  </data>
+</odoo>
