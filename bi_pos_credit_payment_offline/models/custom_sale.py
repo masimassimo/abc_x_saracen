@@ -43,7 +43,7 @@ class partner_credit(models.Model):
 		
 		update_credit_history_obj = self.env['update.credit.history']
 		
-		if self.update > 0.00:
+		if self.update != 0:
 			self.credit_jr = self.update
 			val = {
 				'date_update': datetime.now(),
@@ -109,22 +109,40 @@ class UpdateCreditAccount(models.TransientModel):
 		date_now = datetime.strftime(datetime.now(), '%Y-%m-%d')
 		
 		vals = {}
-		
-		vals = {
-			'name' : self.env['ir.sequence'].with_context(ir_sequence_date=date_now).next_by_code('account.payment.customer.invoice'),
-			'payment_type' : "inbound",
-			'amount' : self.credit_amount,
-			'date' : datetime.now().date(),
-			'journal_id' : self.journal_id.id,
-			'payment_method_id': 1,
-			'partner_type': 'customer',
-			'partner_id': partner_credit_id.partner_id.id,
-		}
+		if self.credit_amount < 0:
+
+			vals = {
+				'name' : self.env['ir.sequence'].with_context(ir_sequence_date=date_now).next_by_code('account.payment.customer.invoice'),
+				'payment_type' : "outbound",
+				'amount' : -(self.credit_amount),
+				'date' : datetime.now().date(),
+				'journal_id' : self.journal_id.id,
+				'payment_method_id': 1,
+				'partner_type': 'supplier',
+				'partner_id': partner_credit_id.partner_id.id,
+			}
+
+		if self.credit_amount >= 0.00:
+			vals = {
+				'name' : self.env['ir.sequence'].with_context(ir_sequence_date=date_now).next_by_code('account.payment.customer.invoice'),
+				'payment_type' : "inbound",
+				'amount' : self.credit_amount,
+				'date' : datetime.now().date(),
+				'journal_id' : self.journal_id.id,
+				'payment_method_id': 1,
+				'partner_type': 'customer',
+				'partner_id': partner_credit_id.partner_id.id,
+			}
 		
 		payment_create = account_payment_obj.create(vals)
 		payment_create.action_post()
 		if partner_credit_id.credit_jr >= 0.00:
-			partner_credit_id.credit_jr = payment_create.amount
+			if payment_create.partner_type == 'customer':
+				partner_credit_id.credit_jr = payment_create.amount
+			
+			if payment_create.payment_type == 'supplier':
+				partner_credit_id.credit_jr = -(payment_create.amount)
+			
 			value = {
 				'date_update': datetime.now(),
 				'update_credit_amount' : partner_credit_id.credit_jr,

@@ -3,7 +3,7 @@
 
 {
     "name" : "POS Customer Credit Payment Offline Mode Supported",
-    "version" : "14.0.0.2",
+    "version" : "14.0.0.3",
     "category" : "Point of Sale",
     'summary': 'Credit Payment on POS and adjust POS payment pos partial payment point of sale partial payment point of sales credit payment pos credit payment offline pos wallet payment POS customer credit payment POS Customer Wallet pos credit payment pos partial credit',
     "description": """
