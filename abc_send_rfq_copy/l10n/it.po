@@ -1,0 +1,196 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* abc_send_rfq_copy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-09 15:02+0000\n"
+"PO-Revision-Date: 2022-05-09 15:02+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: abc_send_rfq_copy
+#: model:ir.actions.report,print_report_name:abc_send_rfq_copy.action_report_purchase_order_calculated
+msgid ""
+"\n"
+"                (object.state in ('draft', 'sent') and 'Request for Quotation - %s' % (object.name) or\n"
+"                'Purchase Order - %s' % (object.name))"
+msgstr ""
+"\n"
+"                (object.state in ('draft', 'sent') and 'Richiesta di preventivo - %s' % (object.name) or\n"
+"                'Ordine di acquisto - %s' % (object.name))"
+
+#. module: abc_send_rfq_copy
+#: model:mail.template,subject:abc_send_rfq_copy.email_template_edi_purchase_zappala
+msgid "${object.company_id.name} Order (Ref ${object.name or 'n/a' })"
+msgstr "${object.company_id.name} Ordine (Rif ${object.name or 'n/a' })"
+
+#. module: abc_send_rfq_copy
+#: model:mail.template,body_html:abc_send_rfq_copy.email_template_edi_purchase_zappala
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        Dear ${object.partner_id.name}\n"
+"        % if object.partner_id.parent_id:\n"
+"            (${object.partner_id.parent_id.name})\n"
+"        % endif\n"
+"        <br/><br/>\n"
+"        Here is in attachment a request for quotation <strong>${object.name}</strong>\n"
+"        % if object.partner_ref:\n"
+"            with reference: ${object.partner_ref}\n"
+"        % endif\n"
+"        from ${object.company_id.name}.\n"
+"        <br/><br/>\n"
+"        If you have any questions, please do not hesitate to contact us.\n"
+"        <br/><br/>\n"
+"        Best regards,\n"
+"    </p>\n"
+"</div>"
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"        Spett.le ${object.partner_id.name}\n"
+"        % if object.partner_id.parent_id:\n"
+"            (${object.partner_id.parent_id.name})\n"
+"        % endif\n"
+"        <br/><br/>\n"
+"        le inviamo in allegato la richiesta di preventivo <strong>${object.name}</strong>\n"
+"        % if object.partner_ref:\n"
+"            con riferimento: ${object.partner_ref}\n"
+"        % endif\n"
+"        da parte di ${object.company_id.name}.\n"
+"        <br/><br/>\n"
+"        Per ulteriori domande, non esiti a contattarci.\n"
+"        <br/><br/>\n"
+"        Cordiali saluti,\n"
+"    </p>\n"
+"</div>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong>Totale parziale</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Amount</strong>"
+msgstr "<strong>Importo</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Date Req.</strong>"
+msgstr "<strong>Data richiesta</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Description</strong>"
+msgstr "<strong>Descrizione</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Order Date:</strong>"
+msgstr "<strong>Data ordine:</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Purchase Representative:</strong>"
+msgstr "<strong>Referente acquisti:</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Qty</strong>"
+msgstr "<strong>Q.tà</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Shipping address:</strong>"
+msgstr "<strong>Indirizzo di spedizione:</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Totale parziale</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Taxes</strong>"
+msgstr "<strong>Imposte</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Total</strong>"
+msgstr "<strong>Totale</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Unit Price</strong>"
+msgstr "<strong>Prezzo unitario</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "<strong>Your Order Reference:</strong>"
+msgstr "<strong>Riferimento ordine:</strong>"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "Cancelled Purchase Order #"
+msgstr "N. ordini di acquisto annullati"
+
+#. module: abc_send_rfq_copy
+#: model:ir.model.fields,field_description:abc_send_rfq_copy.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:abc_send_rfq_copy.field_purchase_order_line__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: abc_send_rfq_copy
+#: model:ir.model.fields,field_description:abc_send_rfq_copy.field_purchase_order__id
+#: model:ir.model.fields,field_description:abc_send_rfq_copy.field_purchase_order_line__id
+msgid "ID"
+msgstr ""
+
+#. module: abc_send_rfq_copy
+#: model:ir.model.fields,field_description:abc_send_rfq_copy.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:abc_send_rfq_copy.field_purchase_order_line____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: abc_send_rfq_copy
+#: model:ir.model,name:abc_send_rfq_copy.model_purchase_order
+msgid "Purchase Order"
+msgstr "Ordine di acquisto"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "Purchase Order #"
+msgstr "Ordine di acquisto n° "
+
+#. module: abc_send_rfq_copy
+#: model:ir.model,name:abc_send_rfq_copy.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Riga ordine di acquisto"
+
+#. module: abc_send_rfq_copy
+#: model:ir.actions.report,name:abc_send_rfq_copy.action_report_purchase_order_calculated
+msgid "Purchase Order With Total calculated"
+msgstr "Ordine di acquisto con calcolo totali"
+
+#. module: abc_send_rfq_copy
+#: model:mail.template,report_name:abc_send_rfq_copy.email_template_edi_purchase_zappala
+msgid "RFQ_${(object.name or '').replace('/','_')}"
+msgstr "RdP_${(object.name or '').replace('/','_')}"
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "Request for Quotation #"
+msgstr "Richiesta di preventivo n° "
+
+#. module: abc_send_rfq_copy
+#: model_terms:ir.ui.view,arch_db:abc_send_rfq_copy.report_purchaseorder_calculated_document
+msgid "Taxes"
+msgstr "Imposte"
